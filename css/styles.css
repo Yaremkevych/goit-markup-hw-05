@@ -187,8 +187,7 @@ a {
     padding: 16px 32px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.solutions-btn:hover,
-.solutions-btn:focus {
+.solutions-btn:is(:hover, :focus) {
     background-color: var(--ocean);
 }
 /*-----------SECTION-2-----------*/
@@ -387,6 +386,9 @@ a {
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+.footer-social-networks {
+    margin-right: 80px;
+}
 .footer-networks-title {
     font-weight: 500;
     font-size: 16px;
@@ -420,6 +422,59 @@ a {
 
 .footer-nerworks-icon {
     fill: var(--cloud);
+}
+.footer-form-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white);
+}
+.footer-email-form {
+    display: flex;
+    gap: 24px;
+}
+.footer-email-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--white);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--white);
+}
+.footer-email-input::placeholder {
+    color: var(--white);
+}
+.footer-email-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    cursor: pointer;
+    background-color: var(--iris);
+    border: none;
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-email-btn:is(:hover, :focus) {
+    background-color: var(--ocean);
+}
+.send-btn-icon {
+    margin-left: 16px;
+    fill: var(--white);
 }
 /*-----------PORTFOLIO-----------*/
 .main-portfolio {
@@ -566,8 +621,10 @@ a {
 .close-modal-btn:is(:hover, :focus) {
     background-color: #404bbf;
     border: none;
-    fill: var(--white);
 }
 .close-modal-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-modal-btn:is(:hover, :focus) .close-modal-icon {
+    fill: var(--white);
 }
