@@ -722,7 +722,7 @@ a {
     fill: transparent;
     margin-right: 8px;
 }
-.modal-check:checked + .checkbox-label .checkbox-span {
+.modal-check:checked + .checkbox-label span {
     background-color: var(--ocean);
     border: none;
     fill: var(--cloud);
