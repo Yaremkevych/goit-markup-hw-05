@@ -387,7 +387,7 @@ a {
     max-width: 264px;
 }
 .footer-social-networks {
-    margin-right: 80px;
+    flex-grow: 1;
 }
 .footer-networks-title {
     font-weight: 500;
@@ -706,7 +706,6 @@ a {
     color: var(--light-slate);
     display: flex;
     align-items: center;
-    justify-content: left;
 }
 .checkbox-span {
     width: 16px;
